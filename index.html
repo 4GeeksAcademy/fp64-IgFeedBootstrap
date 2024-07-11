@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+      </a>
+      <div class="d-flex flex-row">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#miModal" class="btn btn-success">Create a new post</button>
+          <div class="modal" tabindex="-1" id="miModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="textarea">Caption:</label>
+                        <textarea class="form-control" id="textarea" rows="3"
+                          placeholder="Add the caption of your post here"></textarea>
+                        <button type="button" class="btn">
+                          <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn">
+                          <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary succes">Publish</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Profile</button></li>
+            <li><button class="dropdown-item" type="button">Accesibility</button></li>
+            <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+            <li><button class="dropdown-item" type="button" style="color: red">Log out</button></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+  </nav>
+  <div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+          role="tab" aria-controls="home" aria-selected="true">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+          role="tab" aria-controls="profile" aria-selected="false">
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="containter container-fluid">
+          <div class="row">
+            <div class="col-4">
+                <img 
+                src="https://images.unsplash.com/photo-1720416912280-36c8cff635bf?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class=" h-25 d-inline-block" alt="">
+                
+              <img
+                src="https://images.unsplash.com/photo-1720463226599-9b008427f8b4?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class=" h-25 d-inline-block" alt="">
+              <img
+                src="https://images.unsplash.com/photo-1720312550294-db7104f96a6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNjR8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+            </div>
+            <div class="col-4">
+              <img
+                src="https://images.unsplash.com/photo-1720371300677-ba4838fa0678?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMjN8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+              <img
+                src="https://images.unsplash.com/photo-1719967473558-cc9d6f856d07?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMjl8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+              <img
+                src="https://images.unsplash.com/photo-1720265312567-001d6c3f1384?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNzF8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+            </div>
+            <div class="col-4">
+              <img
+                src="https://images.unsplash.com/photo-1720206811364-684e8f8e803f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNDB8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+              <img
+                src="https://images.unsplash.com/photo-1719836257725-cc6659c4100e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxODd8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1719829420254-7bdaff0b43a8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNzh8fHxlbnwwfHx8fHw%3D"
+                class=" h-25 d-inline-block" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container">
+        <div class="post">
+             <div class="post-header">
+                <div><h2>The best trip</h2></div><div><span>12/17</span></div>
+             </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1608650355858-4d8871d497a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI3fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D"></img>
+            </div>
+            <div>
+                <p> Summer vibes!</p>
+            </div>
+        </div>
+
+        </div>
+        <div class="container">
+          <div class="post">
+               <div class="post-header">
+                  <div><h2>Umbrella's party</h2></div><div><span>12/17</span></div>
+                   
+               </div>
+
+              <div>
+                <img src="https://images.unsplash.com/photo-1539443303960-a90a4e7ecc97?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
+                
+              </div>
+      
+              <div>
+                  <p> A beautiful village in Portugal!</p>
+              </div>
+            </div>
+      </div>
+     
+    </div>
+
+    
+  </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
